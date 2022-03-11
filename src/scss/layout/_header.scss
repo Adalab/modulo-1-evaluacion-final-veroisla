@@ -8,6 +8,9 @@
   background-position: 50% 50%;
 }
 
+.header__section1 {
+  height: 20vh;
+}
 .header__hamburguer {
   position: fixed;
   z-index: 999;
@@ -31,13 +34,12 @@
   margin-left: 60px;
 }
 
-/*bien*/
-
 .header__section2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 80vh;
 }
 
 .header__section2--title {
