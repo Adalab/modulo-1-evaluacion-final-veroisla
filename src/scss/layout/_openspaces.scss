@@ -3,7 +3,6 @@
   font-family: $font;
   color: $color-darkgreen;
   text-align: center;
-  display: grid;
 }
 
 .openspaces__title {
@@ -11,6 +10,9 @@
   padding-right: 45px;
   padding-left: 45px;
   margin-bottom: 37px;
+}
+.uppercase {
+  text-transform: uppercase;
 }
 
 .openspaces__article {
@@ -33,5 +35,5 @@
 }
 
 .openspaces__article--line {
-  margin-bottom: 35px;
+  padding-bottom: 35px;
 }

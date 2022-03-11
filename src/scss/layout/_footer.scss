@@ -1,9 +1,13 @@
 .footer {
   background-color: $color-darkgreen;
+  color: $color-white;
+  font-family: $font;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-/*.footer__wrapper {
-  margin-right: 47px;
-  margin-left: 45px;
+.social {
+  display: flex;
+  flex-direction: row;
 }
-*/
