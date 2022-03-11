@@ -18,14 +18,11 @@
   margin-top: 55px;
   margin-left: 21px;
   margin-right: 43px;
-  background-color: lightyellow;
 }
 
 .header__hamburguer--link {
   color: $color-darkgreen;
-}
-.hamburguer {
-  size: 24px 24px; /*mirar tamaño*/
+  font-size: 24px;
 }
 
 .header__logo {

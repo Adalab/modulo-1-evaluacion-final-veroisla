@@ -1,16 +1,37 @@
 .openspaces {
   background-color: $color-lightgrey;
+  font-family: $font;
+  color: $color-darkgreen;
+  text-align: center;
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
 }
 
 .openspaces__title {
-  text-align: center;
-  font-size: 24px;
+  padding-top: 40px;
+  padding-right: 45px;
+  padding-left: 45px;
+  margin-bottom: 37px;
 }
+
+.openspaces__article {
+  text-align: center;
+  margin-right: 105px;
+  margin-left: 105px;
+}
+
 .openspaces__article--images {
   color: $color-darkgreen;
   width: 90px;
   height: 90px;
+  margin-bottom: 35px;
+}
+
+.openspaces__article--title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.openspaces__article--line {
+  margin-bottom: 35px;
 }
