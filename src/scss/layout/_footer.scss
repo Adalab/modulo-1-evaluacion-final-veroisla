@@ -1,13 +1,47 @@
 .footer {
   background-color: $color-darkgreen;
-  color: $color-white;
+  color: $color_lightblue;
   font-family: $font;
+  padding-top: 56px;
+}
+
+.footer__flex {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+.nav__title {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+.nav__group {
+  padding-bottom: 20px;
+}
+.nav__options {
+  font-size: 14px;
+  list-style-type: none;
+  padding-bottom: 2px;
+}
+.nav__link {
+  text-decoration: none;
+  color: $color_lightblue;
+}
+.nav__icon {
+  color: $color-white;
+  margin-top: 15px;
+  font-size: 24px;
+  margin-right: 11px;
+}
+
 .social {
   display: flex;
   flex-direction: row;
+}
+/*REPENSAR FLECHA, METERLA EN EL FLEX??*/
+.arrow {
+  padding-bottom: 16px;
+}
+.arrow__icon {
+  color: $color-white;
 }
