@@ -2,22 +2,30 @@
   background-image: url("../images/room.jpg");
   height: 100vh;
   min-height: 389px;
+  background-size: auto;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
-
+/*.header__wrapper {
+  margin-right: 47px;
+  margin-left: 45px;
+}*/
 .header__hamburguer {
-  /*MIRAR HAMBURGUESA, MÁRGENES, TAMAÑO ETC*/
-  margin-right: 30px;
-  margin-left: 33px;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  margin-top: 55px;
+  margin-left: 21px;
+  margin-right: 43px;
+  background-color: lightyellow;
 }
 
-.fa-bars {
-  position: fixed;
-  top: 0;
-  z-index: 999;
-  padding-top: 55px;
+.header__hamburguer--link {
+  color: $color-darkgreen;
+}
+.hamburguer {
+  size: 24px 24px; /*mirar tamaño*/
 }
 
 .header__logo {
@@ -51,4 +59,5 @@
   font-family: $font;
   font-weight: bold;
   text-decoration: none;
+  text-transform: capitalize;
 }
