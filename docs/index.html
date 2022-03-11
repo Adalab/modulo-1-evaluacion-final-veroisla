@@ -5,10 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Evaluación final Vero</title>
-    <script
-      src="https://kit.fontawesome.com/8e86f55ab9.js"
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
       crossorigin="anonymous"
-    ></script>
+      referrerpolicy="no-referrer"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
       rel="stylesheet"
@@ -19,70 +22,114 @@
   <body>
     <!--HEADER-->
     <header class="header" id="top">
-      <!--<img class="header__image" src="./assets/images/room.jpg" alt="room photo" />-->
-      <section></section>
+      <section class="header__section1">
+        <nav class="header__hamburguer">
+          <a
+            class="header__hamburguer--link"
+            href="https://adalab.es/"
+            target="_blank"
+            ><i class="fa-solid fa-bars hamburguer"></i
+          ></a>
+        </nav>
+        <img
+          class="header__logo"
+          src="./assets/images/logo.png"
+          alt="logo tienda"
+        />
+      </section>
+      <section class="header__section2">
+        <h1 class="header__section2--title">Disfruta creando espacios</h1>
 
-      <a class="header__hamburguer" href="https://adalab.es/" target="_blank"
-        ><i class="fa-solid fa-bars"></i
-      ></a>
-
-      <img class="" src="./assets/images/logo.png" alt="logo tienda" />
-      <section>
-        <h1 class="">Disfruta creando espacios</h1>
-        <a class="" href="https://adalab.es/">Comprar ahora</a>
+        <a class="header__section2--link" href="https://adalab.es/" target="_blank"
+          >Comprar ahora</a
+        >
       </section>
     </header>
 
 
     <main>
       <!--OPENSPACES-->
-      <section>
-          <h2>Volverse organizado se siente mejor con open spaces</h2>
+      <section class="openspaces">
+        <h2 class="openspaces__title">
+          Volverse organizado se siente mejor con
+          <span class="uppercase">open spaces</span>
+        </h2>
 
-          <article>
-            <img src="" alt="" />
-            <h3>Lo que necesitas</h4>
-            <p>Una linea de productos diseñados para todos tus espacios</p>
-          </article>
+        <article class="openspaces__article">
+          <img
+            class="openspaces__article--images"
+            src="./assets/images/table.png"
+            alt="Table wiwh plants"
+          />
+          <h3 class="openspaces__article--title">Lo que necesitas</h3>
+          <p class="openspaces__article--line">
+            Una linea de productos diseñados para todos tus espacios
+          </p>
+        </article>
 
-          <article>
-            <img src="" alt="" />
-            <h3>Materia primas sustentables</h4>
-            <p>Todos los productos con materias primas sustentables</p>
-          </article>
+        <article class="openspaces__article">
+          <img
+            class="openspaces__article--images"
+            src="./assets/images/bag.png"
+            alt="recycle bag"
+          />
+          <h3 class="openspaces__article--title">Materia primas sustentables</h3>
+          <p class="openspaces__article--line">
+            Todos los productos con materias primas sustentables
+          </p>
+        </article>
 
-          <article>
-            <img src="" alt="" />
-            <h3>Guía</h4>
-            <p>Soporte y asesoramiento para ayudarte con tu objetivo</p>
-          </article>
-        </section>
+        <article class="openspaces__article">
+          <img
+            class="openspaces__article--images"
+            src="./assets/images/park.png"
+            alt="park"
+          />
+          <h3 class="openspaces__article--title">Guía</h3>
+          <p class="openspaces__article--line">
+            Soporte y asesoramiento para ayudarte con tu objetivo
+          </p>
+        </article>
+      </section>
+
 
       <!--SHIPPING-->
-      <section>
-        <img src="" alt="" />
-        <h3>Envío gratis garantizado</h3>
-        <p>Envío gratis en compras desde 100</p>
-        <a href="https://adalab.es/">Comprar ahora</a>
+      <section class="shipping">
+        <img class="shipping__image" src="./assets/images/car.png" alt="car" />
+        <h3 class="shipping__title">Envío gratis garantizado</h3>
+        <small class="shipping__small">Envío gratis en compras desde 100</small>
+        <a class="shipping__link" href="https://adalab.es/" target="_blank"
+          >Comprar ahora</a
+        >
       </section>
 
 
       <!--CREATESPACES-->
-      <section>
-        <article>
-          <h3>Disfruta creando espacios</h3>
-          <p>Una linea de productos diseñados para todos tus espacios</p>
-          <a href="https://adalab.es/">Comprar ahora</a>
+      <section class="createspaces">
+        <article class="createarticle">
+          <h3 class="createarticle__title">Disfruta creando espacios</h3>
+          <p class="createarticle__line">
+            Una línea de productos diseñados para todos tus espacios
+          </p>
+          <a class="createarticle__link" href="https://adalab.es/">Comprar ahora</a>
         </article>
-        <img src="" alt="Bathroom picture" />
+        <div class="image">
+          <img
+            class="createspaces__bathroom"
+            src="./assets/images/bathroom.jpg"
+            alt="Bathroom
+          picture"
+          />
+        </div>
       </section>
 
     </main>
 
     <!--FOOTER-->
     <footer>
-      <section>
-        <nav>
+      <section class="footer">
+        <div class="footer__flex">
+        <nav class="nav">
           <h4>Tienda</h4>
           <ul>
             <li><a href="https://adalab.es/" target="_blank">Productos</a></li>
@@ -96,7 +143,7 @@
           </ul>
         </nav>
 
-        <nav>
+        <nav class="nav">
           <h4>Nosotros</h4>
           <ul>
             <li>
@@ -112,7 +159,7 @@
           </ul>
         </nav>
 
-        <nav>
+        <nav class="nav">
           <h4>Contacto</h4>
           <ul>
             <li>
@@ -120,13 +167,15 @@
                 >ayuda@openspaces.com</a
               >
             </li>
+            
             <li><a href="https://adalab.es/" target="_blank">Socios</a></li>
+            <nav class="social">
             <li>
               <a href="https://www.linkedin.com/school/adalab/" target="_blank"
                 ><i class="fa-brands fa-linkedin-in"></i
               ></a>
             </li>
-            <!--meter iconos-->
+
             <li>
               <a
                 href="https://www.instagram.com/adalab_digital/?hl=es"
@@ -141,9 +190,13 @@
             </li>
           </ul>
         </nav>
-        <a href="./index.html#top" title="Ir a principio página"
-          ><i class="fa-solid fa-arrow-up"></i
-        ></a>
+        </nav>
+      </div>
+        <nav class="arrow">
+          <a href="./index.html#top" title="Ir a principio página"
+            ><i class="fa-solid fa-arrow-up"></i
+          ></a>
+        </nav>
       </section>
 
     </footer>
