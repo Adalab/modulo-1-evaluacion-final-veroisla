@@ -1,30 +1,32 @@
 .header {
-  background-color: pink;
-  background-size: auto;
-  height: 100vh; /*
+  background-image: url("../images/room.jpg");
+  height: 100vh;
   min-height: 389px;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 50% 50%;*/
+  background-position: 50% 50%;
 }
 
-.header__section1 {
-  border: 1px solid black;
-  display: flex;
-  justify-content: center;
-  padding-top: 19px;
-}
-.header__section1--hamburguer {
-  padding-top: 36px;
+.header__hamburguer {
+  /*MIRAR HAMBURGUESA, MÁRGENES, TAMAÑO ETC*/
   margin-right: 30px;
   margin-left: 33px;
-  /*position: fixed;
-  top: 0;*/
 }
 
-.header__section1--logo {
-  margin-right: 100px;
+.fa-bars {
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  padding-top: 55px;
 }
+
+.header__logo {
+  margin-right: 100px;
+  margin-top: 19px;
+  margin-left: 60px;
+}
+
+/*bien*/
 
 .header__section2 {
   display: flex;
@@ -38,7 +40,7 @@
   color: $color-darkgreen;
   font-size: 24px;
   font-weight: bold;
-  margin-top: 100px;
+  margin-top: 215px;
   margin-bottom: 24px;
 }
 
@@ -46,4 +48,7 @@
   background-color: $color-darkgreen;
   padding: 12px 24px;
   color: $color-white;
+  font-family: $font;
+  font-weight: bold;
+  text-decoration: none;
 }
