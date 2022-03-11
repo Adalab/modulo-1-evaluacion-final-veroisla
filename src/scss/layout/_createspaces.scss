@@ -2,7 +2,43 @@
   background-color: $color-lightgrey;
 }
 
-/*.createspaces__wrapper {
-  margin-right: 47px;
-  margin-left: 45px;
-}*/
+.createarticle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.createarticle__title {
+  font-family: $font;
+  font-size: 24px;
+  font-weight: bold;
+  color: $color-darkgreen;
+  margin: 87px 27px 12px 27px;
+}
+
+.createarticle__line {
+  font-family: $font;
+  font-size: 14px;
+  color: $color-darkgreen;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.createarticle__link {
+  background-color: $color-darkgreen;
+  padding: 12px 24px;
+  color: $color-white;
+  font-family: $font;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: capitalize;
+  margin-bottom: 92px;
+}
+
+.image {
+  width: 100%;
+}
+.createspaces__bathroom {
+  height: 304px;
+  width: auto;
+}
