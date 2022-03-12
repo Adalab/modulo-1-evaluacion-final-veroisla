@@ -3,51 +3,93 @@
   color: $color_lightblue;
   font-family: $font;
   padding-top: 56px;
+
+  &__movil {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 59px;
+    margin-left: 130px;
+    @media all and (min-width: 768px) {
+      margin-right: 100px;
+      margin-left: 118px;
+    }
+    @media all and (min-width: 1200px) {
+      /*Ver si doy márgenes*/
+    }
+  }
 }
 
-.footer__flex {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-right: 59px;
-  margin-left: 130px;
+.nav {
+  @media all and (min-width: 768px) {
+    width: 208px;
+    margin-right: 20px;
+  }
+
+  @media all and (min-width: 1200px) {
+    margin-right: 150px;
+  }
+
+  &__title {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+
+  &__group {
+    padding-bottom: 20px;
+  }
+
+  &__options {
+    font-size: 14px;
+    list-style-type: none;
+    padding-bottom: 2px;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $color_lightblue;
+  }
+
+  &__icon {
+    color: $color-white;
+    margin-top: 15px;
+    font-size: 24px;
+    margin-right: 11px;
+  }
+
+  &__social {
+    /*navegador redes sociales*/
+    display: flex;
+    flex-direction: row;
+  }
 }
 
-.nav__title {
-  font-size: 20px;
-  margin-bottom: 12px;
-}
-.nav__group {
-  padding-bottom: 20px;
-}
-.nav__options {
-  font-size: 14px;
-  list-style-type: none;
-  padding-bottom: 2px;
-}
-.nav__link {
-  text-decoration: none;
-  color: $color_lightblue;
-}
-.nav__icon {
-  color: $color-white;
-  margin-top: 15px;
-  font-size: 24px;
-  margin-right: 11px;
-}
-
-.social {
-  display: flex;
-  flex-direction: row;
-}
 .arrow {
   padding-bottom: 16px;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   padding-right: 29px;
+
+  @media all and (min-width: 768px) {
+    padding-right: 57px;
+    transform: translateY(-65px);
+  }
+
+  @media all and (min-width: 1200px) {
+    padding-right: 187px;
+  }
+
+  &__icon {
+    color: $color-white;
+    font-size: 24px;
+  }
 }
-.arrow__icon {
-  color: $color-white;
+
+@media all and (min-width: 768px) {
+  .footer__responsive {
+    display: flex;
+    flex-direction: row;
+  }
 }
