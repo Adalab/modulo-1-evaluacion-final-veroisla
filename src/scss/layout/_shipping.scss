@@ -16,6 +16,13 @@
   font-weight: bold;
   color: $color-white;
   padding-bottom: 3px;
+
+  @media all and (min-width: 768px) {
+    font-size: 30px;
+  }
+  @media all and (min-width: 1200px) {
+    font-size: 36px;
+  }
 }
 .shipping__small {
   font-family: $font;
