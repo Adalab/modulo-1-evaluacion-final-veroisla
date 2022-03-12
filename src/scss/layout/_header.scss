@@ -5,9 +5,11 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .header__section1 {
   height: 20vh;
 }
+
 .header__hamburguer {
   position: fixed;
   z-index: 999;
@@ -22,9 +24,8 @@
 }
 
 .header__logo {
-  margin-right: 100px;
   margin-top: 19px;
-  margin-left: 43px;
+  margin-left: 100px;
 }
 
 .header__section2 {
@@ -52,4 +53,5 @@
   font-weight: bold;
   text-decoration: none;
   text-transform: capitalize;
+  margin-bottom: 64px;
 }

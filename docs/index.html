@@ -31,11 +31,7 @@
             ><i class="fa-solid fa-bars hamburguer"></i
           ></a>
         </nav>
-        <img
-          class="header__logo"
-          src="./assets/images/logo.png"
-          alt="logo tienda"
-        />
+        <img class="header__logo" src="./assets/images/logo.png" alt="logo" />
       </section>
       <section class="header__section2">
         <h1 class="header__section2--title">Disfruta creando espacios</h1>
@@ -45,7 +41,6 @@
         >
       </section>
     </header>
-
 
     <main>
       <!--OPENSPACES-->
@@ -112,15 +107,13 @@
             Una línea de productos diseñados para todos tus espacios
           </p>
           <a class="createarticle__link" href="https://adalab.es/">Comprar ahora</a>
-        </article>
-        <div class="image">
           <img
             class="createspaces__bathroom"
             src="./assets/images/bathroom.jpg"
             alt="Bathroom
           picture"
           />
-        </div>
+        </article>
       </section>
 
     </main>
@@ -128,9 +121,9 @@
     <!--FOOTER-->
     <footer>
       <section class="footer">
-        <nav class="footer__flex">
-        <section>
-        <nav>
+        <nav class="footer__movil"> <!--Versión móvil-->
+        <section class="footer__responsive"><!--Necesito este section para la version ordenador y tablet-->
+        <nav class="nav">
           <h4 class="nav__title">Tienda</h4>
           <ul class="nav__group">
             <li class="nav__options"><a class="nav__link" href="https://adalab.es/" target="_blank">Productos</a></li>
@@ -144,7 +137,7 @@
           </ul>
         </nav>
 
-        <nav>
+        <nav class="nav">
           <h4 class="nav__title">Nosotros</h4>
           <ul class="nav__group">
             <li class="nav__options">
@@ -160,7 +153,7 @@
           </ul>
         </nav>
 
-        <nav>
+        <nav class="nav">
           <h4 class="nav__title">Contacto</h4>
           <ul class="nav__group">
             <li class="nav__options">
@@ -171,7 +164,7 @@
             
             <li class="nav__options"><a class="nav__link" href="https://adalab.es/empresas/" target="_blank">Socios</a></li>
 
-            <nav class="social">
+            <nav class="nav__social">
             <li class="nav__options">
               <a class="nav__icon" href="https://www.linkedin.com/school/adalab/" target="_blank"
                 ><i class="fa-brands fa-linkedin-in"></i
@@ -198,7 +191,7 @@
             ><i class="fa-solid fa-arrow-up"></i
           ></a>
         </nav>
-      </section> <!--SECTION SIN CLASE-->
+      </section> <!--FOOTER-RESPONSIVE-->
       </section>
 
     </footer>
