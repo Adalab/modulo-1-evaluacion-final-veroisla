@@ -7,6 +7,12 @@
   flex-direction: column;
   align-items: center;
   background-color: $color-lightgrey;
+
+  /* @media all and (min-width: 1200px) {
+    display: grid;
+    grid-template-columns: 854px 874px;
+    grid-template-rows: auto auto;
+  }*/
 }
 
 .createarticle__title {
