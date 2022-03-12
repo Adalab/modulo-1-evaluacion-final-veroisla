@@ -8,7 +8,10 @@
 .footer__flex {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+  margin-right: 59px;
+  margin-left: 130px;
 }
 
 .nav__title {
@@ -38,9 +41,12 @@
   display: flex;
   flex-direction: row;
 }
-/*REPENSAR FLECHA, METERLA EN EL FLEX??*/
 .arrow {
   padding-bottom: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-right: 29px;
 }
 .arrow__icon {
   color: $color-white;
