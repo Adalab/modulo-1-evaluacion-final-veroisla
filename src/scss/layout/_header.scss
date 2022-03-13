@@ -16,6 +16,11 @@
   top: 0;
   margin-top: 55px;
   margin-left: 33px;
+
+  @media all and (min-width: 768px) {
+    margin-top: 75px;
+    margin-left: 82px;
+  }
 }
 
 .header__hamburguer--link {
@@ -26,14 +31,24 @@
 .header__logo {
   margin-top: 19px;
   margin-left: 100px;
+
+  @media all and (min-width: 768px) {
+    margin-top: 39px;
+    margin-left: 350px;
+  }
 }
 
 .header__section2 {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center;¿?*/
   align-items: center;
   height: 80vh;
+
+  @media all and (min-width: 768px) {
+    align-items: flex-start;
+    margin-left: 147px;
+  }
 }
 
 .header__section2--title {
@@ -43,6 +58,13 @@
   font-weight: bold;
   margin-top: 215px;
   margin-bottom: 24px;
+
+  @media all and (min-width: 768px) {
+    font-size: 36px;
+    width: 15ch;
+    margin-top: 200px;
+    margin-bottom: 12px;
+  }
 }
 
 .header__button {
@@ -56,8 +78,8 @@
 
 .header__button :hover {
   border-color: 1px solid #db7e77;
-  /* background-color: #db7e77;Otra opción*/
-  background-color: #d35e56;
+  background-color: #db7e77;
+
   /*revisar transición*/
 }
 .header__button--link {
