@@ -3,81 +3,84 @@
   font-family: $font;
   color: $color-darkgreen;
   text-align: center;
-}
 
-.openspaces__container {
-  @media all and (min-width: 768px) {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 380px;
-  }
-}
-
-.openspaces__title {
-  font-size: 24px;
-  margin: 0px 47px 37px 45px;
-  padding-top: 40px;
-
-  @media all and (min-width: 768px) {
-    padding-top: 63px;
+  &__title {
     font-size: 24px;
-    margin-bottom: 40px;
+    margin: 0px 47px 37px 45px;
+    padding-top: 40px;
+
+    &--uppercase {
+      text-transform: uppercase;
+    }
+
+    @media all and (min-width: 768px) {
+      padding-top: 63px;
+      font-size: 24px;
+      margin-bottom: 40px;
+    }
+
+    @media all and (min-width: 1200px) {
+      display: inline-block; /*Para poder centrarlo*/
+      align-self: center;
+      font-size: 36px;
+      width: 35ch;
+      margin-bottom: 67px;
+    }
   }
 
-  @media all and (min-width: 1200px) {
-    display: inline-block; /*Para poder centrarlo*/
-    align-self: center;
-    font-size: 36px;
-    width: 35ch;
-    margin-bottom: 67px;
+  &__container {
+    @media all and (min-width: 768px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 380px;
+    }
+  }
+
+  &__article {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-right: 105px;
+    margin-left: 105px;
+
+    @media all and (min-width: 768px) {
+      margin: 0px; /*Si quito este margen se descuadra todo*/
+      align-items: center;
+    }
+
+    &--images {
+      color: $color-darkgreen;
+      width: 90px;
+      height: 90px;
+      margin-bottom: 40px;
+      align-self: center;
+
+      @media all and (min-width: 1200px) {
+        width: 120px;
+        height: 120px;
+      }
+    }
+
+    &--title {
+      font-size: 20px;
+      margin-bottom: 12px;
+
+      @media all and (min-width: 1200px) {
+        font-size: 24px;
+      }
+    }
+
+    &--line {
+      margin-bottom: 35px;
+
+      @media all and (min-width: 768px) {
+        width: 22ch;
+      }
+    }
   }
 }
-.uppercase {
-  text-transform: uppercase;
-}
 
-.openspaces__article {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  margin-right: 105px;
-  margin-left: 105px;
-
-  @media all and (min-width: 768px) {
-    margin: 0px; /*Si quito este margen se descuadra todo*/
-    align-items: center;
-  }
-}
-
-.openspaces__article--images {
-  color: $color-darkgreen;
-  width: 90px;
-  height: 90px;
-  margin-bottom: 40px;
-  align-self: center;
-
-  @media all and (min-width: 1200px) {
-    width: 120px;
-    height: 120px;
-  }
-}
-
-.openspaces__article--title {
-  font-size: 20px;
-  margin-bottom: 12px;
-
-  @media all and (min-width: 1200px) {
-    font-size: 24px;
-  }
-}
-
-.openspaces__article--line {
-  margin-bottom: 35px;
-
-  @media all and (min-width: 768px) {
-    width: 22ch;
-  }
-}
+/*RESPONSIVE*/
 
 @media all and (min-width: 768px) {
   .article1 {
