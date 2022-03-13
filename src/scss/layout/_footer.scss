@@ -61,6 +61,7 @@
 }
 
 /*ICONOS*/
+
 .nav__icon {
   color: $color-white;
   font-size: 24px;
@@ -81,5 +82,12 @@
   /*Para mover la flecha hacia la derecha*/
   @media all and (min-width: 768px) {
     transform: translateX(50px);
+  }
+  /* TRANSICIÓN / REVISAR */
+
+  &--transition :hover {
+    font-size: 130%;
+    transition-duration: 0, 8s;
+    transition-timing-function: ease-in-out;
   }
 }

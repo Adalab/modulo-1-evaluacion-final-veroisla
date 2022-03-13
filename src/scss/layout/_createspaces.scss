@@ -33,15 +33,29 @@
   margin-left: 27px;
 }
 
-.createarticle__link {
-  background-color: $color-darkgreen;
-  padding: 12px 24px;
-  color: $color-white;
+.createspaces__button {
   font-family: $font;
-  font-weight: bold;
-  text-decoration: none;
-  text-transform: capitalize;
+  background-color: $color-darkgreen;
+  width: 175px;
+  height: 48px;
   margin-bottom: 92px;
+  border: 1px solid $color-darkgreen;
+}
+
+.createspaces__button :hover {
+  border-color: 1px solid #db7e77;
+  /* background-color: #db7e77;Otra opción*/
+  background-color: #d35e56;
+  /*revisar transición*/
+}
+
+.createspaces__link {
+  text-decoration: none;
+  color: $color-white;
+  /*padding: 12px 24px; Este es el padding correcto, revisar!!!*/
+  padding: 14px 33px;
+  font-weight: bold;
+  text-transform: capitalize;
 }
 
 .createspaces__bathroom {
