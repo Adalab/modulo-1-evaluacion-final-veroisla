@@ -1,37 +1,60 @@
+/* --- SECCIÓN CREATE SPACES ---*/
+
+/*CREATE SPACES ARTICLE*/
+
 .createspaces {
-  background-color: $color-lightgrey;
+  @media all and (min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  &__article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $color-lightgrey;
+    text-align: center;
+
+    @media all and (min-width: 1200px) {
+      width: 90%;
+      text-align: left;
+    }
+
+    &--title {
+      font-family: $font;
+      font-size: 24px;
+      font-weight: bold;
+      color: $color-darkgreen;
+      margin: 87px 27px 12px 27px;
+
+      @media all and (min-width: 768px) {
+        font-size: 30px;
+        width: 15ch;
+      }
+
+      @media all and (min-width: 1200) {
+        font-size: 36px;
+      }
+    }
+
+    &--line {
+      font-family: $font;
+      font-size: 14px;
+      color: $color-darkgreen;
+      margin-bottom: 24px;
+      margin-right: 27px;
+      margin-left: 27px;
+
+      @media all and (min-width: 1200px) {
+        font-size: 16px;
+        width: 30ch;
+      }
+    }
+  }
 }
 
-.createarticle {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: $color-lightgrey;
-
-  /* @media all and (min-width: 1200px) {
-    display: grid;
-    grid-template-columns: 854px 874px;
-    grid-template-rows: auto auto;
-  }*/
-}
-
-.createarticle__title {
-  font-family: $font;
-  font-size: 24px;
-  font-weight: bold;
-  color: $color-darkgreen;
-  margin: 87px 27px 12px 27px;
-}
-
-.createarticle__line {
-  font-family: $font;
-  font-size: 14px;
-  color: $color-darkgreen;
-  text-align: center;
-  margin-bottom: 24px;
-  margin-right: 27px;
-  margin-left: 27px;
-}
+/*BOTÓN CREATE SPACES*/
 
 .createspaces__button {
   font-family: $font;
@@ -40,26 +63,31 @@
   height: 48px;
   margin-bottom: 92px;
   border: 1px solid $color-darkgreen;
+
+  & :hover {
+    border-color: 1px solid #db7e77;
+    /* background-color: #db7e77;Otra opción*/
+    background-color: #d35e56;
+    /*revisar transición*/
+  }
+
+  &--link {
+    text-decoration: none;
+    color: $color-white;
+    /*padding: 12px 24px; Este es el padding correcto, revisar!!!*/
+    padding: 14px 33px;
+    font-weight: bold;
+    text-transform: capitalize;
+  }
 }
 
-.createspaces__button :hover {
-  border-color: 1px solid #db7e77;
-  /* background-color: #db7e77;Otra opción*/
-  background-color: #d35e56;
-  /*revisar transición*/
-}
-
-.createspaces__button--link {
-  text-decoration: none;
-  color: $color-white;
-  /*padding: 12px 24px; Este es el padding correcto, revisar!!!*/
-  padding: 14px 33px;
-  font-weight: bold;
-  text-transform: capitalize;
-}
+/*IMAGEN BAÑO*/
 
 .createspaces__bathroom {
   height: 304px;
   width: 100%;
   object-fit: cover;
+  @media all and (min-width: 1200px) {
+    height: 400px;
+  }
 }
