@@ -45,13 +45,26 @@
   margin-bottom: 24px;
 }
 
-.header__section2--link {
-  background-color: $color-darkgreen;
-  padding: 12px 24px;
-  color: $color-white;
+.header__button {
   font-family: $font;
-  font-weight: bold;
-  text-decoration: none;
-  text-transform: capitalize;
+  background-color: $color-darkgreen;
+  width: 175px;
+  height: 48px;
   margin-bottom: 64px;
+  border: 1px solid $color-darkgreen;
+}
+
+.header__button :hover {
+  border-color: 1px solid #db7e77;
+  /* background-color: #db7e77;Otra opción*/
+  background-color: #d35e56;
+  /*revisar transición*/
+}
+.header__button--link {
+  text-decoration: none;
+  color: $color-white;
+  /*padding: 12px 24px; Este es el padding correcto, revisar!!!*/
+  padding: 14px 33px;
+  font-weight: bold;
+  text-transform: capitalize;
 }
