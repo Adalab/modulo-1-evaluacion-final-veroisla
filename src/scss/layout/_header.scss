@@ -1,3 +1,5 @@
+/*HEADER HAMBURGUESA Y LOGOTIPO*/
+
 .header {
   background-image: url("../images/room.jpg");
   height: 100vh;
@@ -12,7 +14,6 @@
 
 .header__hamburguer {
   position: fixed;
-  z-index: 999;
   top: 0;
   margin-top: 55px;
   margin-left: 33px;
@@ -21,12 +22,50 @@
     margin-top: 75px;
     margin-left: 82px;
   }
+  @media all and (min-width: 1200px) {
+    display: none;
+  }
 }
 
 .header__hamburguer--link {
   color: $color-darkgreen;
   font-size: 24px;
 }
+
+/*NAV VERSIÓN DESKTOP*/
+
+.header__menu {
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+}
+
+.header__nav {
+  display: none;
+
+  @media all and (min-width: 768px) {
+    display: none;
+  }
+
+  @media all and (min-width: 1200px) {
+    display: flex;
+    justify-content: flex-start;
+    list-style-type: none;
+    margin-top: 76px;
+    margin-left: 100px;
+  }
+
+  .header__nav--link {
+    color: $color-darkgreen;
+    font-size: 16px;
+    text-decoration: none;
+    font-family: $font;
+    padding: 10px 10px 10px 30px;
+    /* background-color: $color-lightgrey;*/ /*Considerar background-color, para que no se superpongan los textos*/
+  }
+}
+
+/*HEADER LOGOTIPO*/
 
 .header__logo {
   margin-top: 19px;
@@ -36,19 +75,29 @@
     margin-top: 39px;
     margin-left: 350px;
   }
+
+  @media all and (min-width: 1200px) {
+    margin-left: 650px;
+  }
 }
 
+/*HEADER SECTION 2*/
+
 .header__section2 {
+  height: 80vh;
   display: flex;
   flex-direction: column;
-  /* justify-content: center;¿?*/
   align-items: center;
-  height: 80vh;
+}
+
+.section2 {
+  justify-content: center;
+  text-align: center;
 
   @media all and (min-width: 768px) {
-    align-items: flex-start;
+    align-self: flex-start;
+    text-align: left;
     margin-left: 147px;
-    margin-bottom: 450px;
   }
 
   @media all and (min-width: 1200px) {
@@ -72,12 +121,14 @@
   }
 }
 
+/*BOTÓN COMPRAR AHORA*/
+
 .header__button {
   font-family: $font;
   background-color: $color-darkgreen;
   width: 175px;
   height: 48px;
-  margin-bottom: 64px;
+  /* margin-bottom: 64px; quitar*/
   border: 1px solid $color-darkgreen;
 }
 
