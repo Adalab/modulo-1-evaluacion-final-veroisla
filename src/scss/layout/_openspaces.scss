@@ -23,6 +23,14 @@
     font-size: 24px;
     margin-bottom: 40px;
   }
+
+  @media all and (min-width: 1200px) {
+    display: inline-block; /*Para poder centrarlo*/
+    align-self: center;
+    font-size: 36px;
+    width: 35ch;
+    margin-bottom: 67px;
+  }
 }
 .uppercase {
   text-transform: uppercase;
@@ -68,10 +76,6 @@
 
   @media all and (min-width: 768px) {
     width: 22ch;
-
-    @media all and (min-width: 1200px) {
-      margin-left: 120px;
-    } /*margen para el desktop*/
   }
 }
 
