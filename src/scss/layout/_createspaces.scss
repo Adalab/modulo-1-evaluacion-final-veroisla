@@ -42,9 +42,7 @@
       font-family: $font;
       font-size: 14px;
       color: $color-darkgreen;
-      margin-bottom: 24px;
-      margin-right: 27px;
-      margin-left: 27px;
+      margin: 0px 27px 24px 27px;
 
       @media all and (min-width: 1200px) {
         font-size: 16px;
@@ -62,20 +60,19 @@
   width: 175px;
   height: 48px;
   margin-bottom: 92px;
-  border: 1px solid $color-darkgreen;
+
+  @media all and (min-width: 1200px) {
+    margin-right: 130px;
+  }
 
   & :hover {
-    border-color: 1px solid #db7e77;
-    /* background-color: #db7e77;Otra opción*/
     background-color: #d35e56;
-    /*revisar transición*/
   }
 
   &--link {
     text-decoration: none;
     color: $color-white;
-    /*padding: 12px 24px; Este es el padding correcto, revisar!!!*/
-    padding: 14px 33px;
+    padding: 12px 24px;
     font-weight: bold;
     text-transform: capitalize;
   }
