@@ -1,7 +1,6 @@
 # **`Proyecto Final Módulo Maquetación`** 💻
 
 <br>
-<br>
 
 ### ➡️ Enunciado:
 
@@ -46,5 +45,4 @@ propiedades de CSS que se deseen. <br>
 
 ---
 
-##[¡Este es el resultado final de mi proyecto!](http://beta.adalab.es/modulo-1-evaluacion-final-veroisla/)
-😀 <br> <br>
+## [¡Este es el resultado final de mi proyecto!](http://beta.adalab.es/modulo-1-evaluacion-final-veroisla/) 😀 <br> <br>
