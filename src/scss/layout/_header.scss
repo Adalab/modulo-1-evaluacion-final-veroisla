@@ -63,6 +63,10 @@
       font-family: $font;
       padding: 10px 10px 10px 30px;
       /* background-color: $color-lightgrey;*/ /*Considerar background-color, para que no se superpongan los textos*/
+
+      &:hover {
+        color: #ff4d4d;
+      }
     }
   }
 

@@ -55,6 +55,10 @@
       text-decoration: none;
       font-size: 14px;
 
+      &:hover {
+        color: $color-link;
+      }
+
       @media all and (min-width: 1200px) {
         font-size: 16px;
       }
@@ -67,6 +71,10 @@
 .nav__icon {
   color: $color-white;
   font-size: 24px;
+
+  &:hover {
+    color: $color-link;
+  }
 }
 
 .container__menu--social {
@@ -104,6 +112,6 @@
 
   to {
     transform: scale(2);
-    color: $color-orange;
+    color: $color-link;
   }
 }
