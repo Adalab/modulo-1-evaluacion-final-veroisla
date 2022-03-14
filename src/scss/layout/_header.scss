@@ -1,4 +1,4 @@
-/*HEADER HAMBURGUESA Y LOGOTIPO*/
+/*HEADER*/
 
 .header {
   background-image: url("../images/room.jpg");
@@ -89,65 +89,65 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    &--container {
+      justify-content: center;
+      text-align: center;
+
+      @media all and (min-width: 768px) {
+        align-self: flex-start;
+        text-align: left;
+        margin-left: 147px;
+      }
+
+      @media all and (min-width: 1200px) {
+        margin-left: 280px;
+      }
+    }
+
+    &--title {
+      font-family: $font;
+      color: $color-darkgreen;
+      font-size: 24px;
+      font-weight: bold;
+      margin-top: 215px;
+      margin-bottom: 24px;
+
+      @media all and (min-width: 768px) {
+        font-size: 36px;
+        width: 15ch;
+        margin-top: 200px;
+        margin-bottom: 12px;
+      }
+    }
   }
-}
 
-.header__section2--container {
-  justify-content: center;
-  text-align: center;
+  /*BOTÓN COMPRAR AHORA*/
 
-  @media all and (min-width: 768px) {
-    align-self: flex-start;
-    text-align: left;
-    margin-left: 147px;
-  }
+  &__button {
+    font-family: $font;
+    background-color: $color-darkgreen;
+    width: 175px;
+    height: 48px;
+    border: solid 1px $color-darkgreen;
+    transition: background-color 0.8s, border 0.8s;
 
-  @media all and (min-width: 1200px) {
-    margin-left: 280px;
-  }
-}
+    &:hover {
+      background-color: $color-hover;
+      border: solid 2px $color-darkgreen;
+    }
 
-.header__section2--title {
-  font-family: $font;
-  color: $color-darkgreen;
-  font-size: 24px;
-  font-weight: bold;
-  margin-top: 215px;
-  margin-bottom: 24px;
+    &--link {
+      text-decoration: none;
+      color: $color-white;
+      padding: 12px 24px;
+      font-weight: bold;
+      text-transform: capitalize;
+      transition: color 0.8s;
 
-  @media all and (min-width: 768px) {
-    font-size: 36px;
-    width: 15ch;
-    margin-top: 200px;
-    margin-bottom: 12px;
-  }
-}
-
-/*BOTÓN COMPRAR AHORA*/
-
-.header__button {
-  font-family: $font;
-  background-color: $color-darkgreen;
-  width: 175px;
-  height: 48px;
-  border: solid 1px $color-darkgreen;
-  transition: background-color 0.8s, border 0.8s;
-}
-
-.header__button:hover {
-  background-color: $color-hover;
-  border: solid 2px $color-darkgreen;
-}
-
-.header__button--link {
-  text-decoration: none;
-  color: $color-white;
-  padding: 12px 24px;
-  font-weight: bold;
-  text-transform: capitalize;
-  transition: color 0.8s;
-
-  &:hover {
-    color: $color-darkgreen;
+      &:hover {
+        color: $color-texthover;
+      }
+    }
   }
 }

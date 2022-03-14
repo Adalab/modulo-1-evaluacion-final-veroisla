@@ -1,8 +1,12 @@
+/*SECTION OPEN SPCAES*/
+
 .openspaces {
   background-color: $color-lightgrey;
   font-family: $font;
   color: $color-darkgreen;
   text-align: center;
+
+  /*--TITLE--*/
 
   &__title {
     font-size: 24px;
@@ -20,13 +24,15 @@
     }
 
     @media all and (min-width: 1200px) {
-      display: inline-block; /*Para poder centrarlo*/
+      display: inline-block;
       align-self: center;
       font-size: 36px;
       width: 35ch;
       margin-bottom: 67px;
     }
   }
+
+  /*--CONTAINER--*/
 
   &__container {
     @media all and (min-width: 768px) {
@@ -44,7 +50,7 @@
     margin-left: 105px;
 
     @media all and (min-width: 768px) {
-      margin: 0px; /*Si quito este margen se descuadra todo*/
+      margin: 0px; /*Si quito este margen se descuadra*/
       align-items: center;
     }
 

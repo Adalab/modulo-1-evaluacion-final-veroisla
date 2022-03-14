@@ -1,3 +1,5 @@
+/*SECTION SHIPPING*/
+
 .shipping {
   background-color: $color-orange;
   display: flex;
@@ -37,6 +39,8 @@
     }
   }
 
+  /*--BOTÓN--*/
+
   &__button {
     font-family: $font;
     background-color: $color-orange;
@@ -58,7 +62,7 @@
     padding: 12px 24px;
 
     &:hover {
-      color: $color-darkgreen;
+      color: $color-texthover;
     }
   }
 }
