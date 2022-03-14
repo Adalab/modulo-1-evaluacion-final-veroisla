@@ -128,11 +128,13 @@
   background-color: $color-darkgreen;
   width: 175px;
   height: 48px;
+  border: solid 1px $color-darkgreen;
+  transition: background-color 0.8s, border 0.8s;
 }
 
-.header__button :hover {
-  border-color: 1px solid #db7e77;
-  background-color: #db7e77;
+.header__button:hover {
+  background-color: $color-hover;
+  border: solid 2px $color-darkgreen;
 }
 
 .header__button--link {
@@ -141,4 +143,9 @@
   padding: 12px 24px;
   font-weight: bold;
   text-transform: capitalize;
+  transition: color 0.8s;
+
+  &:hover {
+    color: $color-darkgreen;
+  }
 }

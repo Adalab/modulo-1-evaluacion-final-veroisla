@@ -60,13 +60,16 @@
   width: 175px;
   height: 48px;
   margin-bottom: 92px;
+  border: solid 1px $color-darkgreen;
+  transition: background-color 0.8s, border 0.8s;
 
   @media all and (min-width: 1200px) {
     margin-right: 130px;
   }
 
-  & :hover {
-    background-color: #d35e56;
+  &:hover {
+    background-color: $color-hover;
+    border: solid 2px $color-darkgreen;
   }
 
   &--link {
@@ -75,6 +78,10 @@
     padding: 12px 24px;
     font-weight: bold;
     text-transform: capitalize;
+
+    &:hover {
+      color: $color-darkgreen;
+    }
   }
 }
 
