@@ -1,17 +1,24 @@
-# **Proyecto Final Módulo Maquetación** 💻
+# **`Proyecto Final Módulo Maquetación`** 💻
 
 <br>
+<br>
+
 ### ➡️ Enunciado:
+
 ---
 
 El ejercicio consiste en desarrollar una página web de acuerdo a un diseño dado.
 Hay que resolver varios puntos:
 
-- `Usar Sass`
-- `Usar flexbox y CSS Grid`
-- `Usar media queries`
-- `Resolver algunas interacciones usando transiciones`
+🟨 Usar Sass
 
+🟨 Usar flexbox y CSS Grid
+
+🟨 Usar media queries
+
+🟨 Resolver algunas interacciones usando transiciones
+
+<br>
 <br>
 
 ### ➡️ Maquetación:
@@ -37,7 +44,7 @@ propiedades de CSS que se deseen.
 6️⃣ Cuarto módulo (Disfruta crando espacios): se puede maquetar usando las
 propiedades de CSS que se deseen. <br>
 
-### ➡️ Lenguaje / Tecnología:
+---
 
-[¡Este es el resultado final de mi proyecto!](http://beta.adalab.es/modulo-1-evaluacion-final-veroisla/)
+##[¡Este es el resultado final de mi proyecto!](http://beta.adalab.es/modulo-1-evaluacion-final-veroisla/)
 😀 <br> <br>
