@@ -20,6 +20,7 @@
 
     @media all and (min-width: 768px) {
       font-size: 30px;
+      order: 2;
     }
     @media all and (min-width: 1200px) {
       font-size: 36px;
@@ -34,6 +35,10 @@
     margin-right: 27px;
     margin-left: 12px;
 
+    @media all and (min-width: 768px) {
+      order: 1px;
+    }
+
     @media all and (min-width: 1200px) {
       font-size: 16px;
     }
@@ -43,13 +48,18 @@
 
   &__button {
     font-family: $font;
-    background-color: $color-orange;
+    background-color: $color-darkgreen;
     width: 175px;
     height: 48px;
     margin: 5px 124px 51px 115px;
+    margin-top: 20px;
     border-color: $color-orange;
-    border: 1px solid $color-orange;
+    border: 1px solid $color-darkgreen;
     transition: background-color 0.8s, border 0.8s;
+
+    @media all and (min-width: 768px) {
+      order: 3;
+    }
   }
 
   &__button:hover {
@@ -60,6 +70,8 @@
   &__link {
     color: $color-white;
     padding: 12px 24px;
+    text-decoration: none;
+    text-transform: capitalize;
 
     &:hover {
       color: $color-texthover;

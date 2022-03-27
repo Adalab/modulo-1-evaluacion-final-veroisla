@@ -61,11 +61,12 @@
       font-size: 16px;
       text-decoration: none;
       font-family: $font;
-      padding: 10px 10px 10px 30px;
+      margin-right: 40px;
+
       /* background-color: $color-lightgrey;*/ /*Considerar background-color, para que no se superpongan los textos*/
 
       &:hover {
-        color: #ff4d4d;
+        border-bottom: 2px solid $color-darkgreen;
       }
     }
   }
